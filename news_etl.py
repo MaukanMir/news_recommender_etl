@@ -52,11 +52,11 @@ df = pull_from_db(RECCOMMENDATION_FEED)
 
 # ---------------------
 
-# NEWS FEED COLLECTION HERE
+# USER CONFIG COLLECTION HERE
 
 # ----------------------
 
-df = pull_from_db(NEWS_FEED)
+df = pull_from_db(USER_CONFIG)
 
 
 
