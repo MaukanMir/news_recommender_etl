@@ -16,4 +16,15 @@ NEWS_FEED = "news_feed"
 RECCOMMENDATION_FEED ="recommedation_feed"
 USER_CONFIG = "user_config"
 
+# FUNCTIONS
+
+def pull_from_db(collection_name:str):
+    """
+    Summary:
+    This function will make generic pulls from the database
+
+    Args:
+        It will take in the collection name which is type string
+    """
+
 
