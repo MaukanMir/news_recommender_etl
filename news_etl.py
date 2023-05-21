@@ -19,7 +19,7 @@ USER_CONFIG = "user_config"
 
 # FUNCTIONS
 
-def pull_from_db(collection_name:str):
+def pull_from_db(collection_name:str)-> pd.DataFrame:
     """
     Summary:
     This function will make generic pulls from the database
