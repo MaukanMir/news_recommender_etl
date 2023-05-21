@@ -34,4 +34,13 @@ def pull_from_db(collection_name:str)-> pd.DataFrame:
     
     return pd.DataFrame(list(cursor))
 
+# ---------------------
+
+# NEWS FEED COLLECTION HERE
+
+# ----------------------
+
+df = pull_from_db(NEWS_FEED)
+
+
 
