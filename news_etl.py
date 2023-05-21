@@ -1,2 +1,2 @@
 import pandas as pd
-import pymongo import MongoClient
+from pymongo import MongoClient
