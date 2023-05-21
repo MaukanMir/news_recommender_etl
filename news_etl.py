@@ -42,5 +42,21 @@ def pull_from_db(collection_name:str)-> pd.DataFrame:
 
 df = pull_from_db(NEWS_FEED)
 
+# ---------------------
+
+# RECOMMENDATION FEED COLLECTION HERE
+
+# ----------------------
+
+df = pull_from_db(RECCOMMENDATION_FEED)
+
+# ---------------------
+
+# NEWS FEED COLLECTION HERE
+
+# ----------------------
+
+df = pull_from_db(NEWS_FEED)
+
 
 
