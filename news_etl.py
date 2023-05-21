@@ -7,6 +7,7 @@ from dotenv import dotenv_values
 env_variables = dotenv_values(".env")
 
 # Mongo creds Here
+CLIENT = env_variables["MONGO_DB"]
 HOST = env_variables["HOST"]
 PORT = 27017
 
