@@ -11,5 +11,8 @@ HOST = env_variables["HOST"]
 PORT = 27017
 
 # Collection names here
+NEWS_FEED = "news_feed"
+RECCOMMENDATION_FEED ="recommedation_feed"
+USER_CONFIG = "user_config"
 
 
