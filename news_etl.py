@@ -7,7 +7,8 @@ from dotenv import dotenv_values
 env_variables = dotenv_values(".env")
 
 # Mongo creds Here
-CLIENT = env_variables["MONGO_DB"]
+CLIENT = MongoClient(env_variables["MONGO_DB"])
+DB = CLIENT["spring"]
 HOST = env_variables["HOST"]
 PORT = 27017
 
@@ -26,5 +27,11 @@ def pull_from_db(collection_name:str):
     Args:
         It will take in the collection name which is type string
     """
+    
+    collection = DB[collection_name]
+    
+    cursor = collection.find({})
+    
+    return pd.DataFrame(list(cursor))
 
 
